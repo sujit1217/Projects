@@ -1,0 +1,197 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000000;
+}
+
+.logo-box {
+   background: #ffff;
+   padding: 30px 120px;
+   width: 500px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   border-radius: 15px;
+   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+   text-align: center;
+}
+
+.twitterlogo 
+{
+ width: 30px;
+ margin-bottom: 20px;
+}
+
+.logo-box h2 {
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.logo-box button img {
+    width: 20px;
+    margin-right: 10px;
+    height: 20px;
+    
+}
+.logo-box button{
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 20px 0;
+    font-weight: 500;
+    background: transparent;
+    border: 1px solid #000000;
+}
+.logo-box span{
+    display:block;
+    width: 40px;
+    margin: auto;
+    background: #ffff;
+    font-size: 14px;
+    margin-top: -12px;
+}
+
+.logo-box input{
+    margin-top: 20px;
+    width:100%;
+    background: transparent;
+    border: 1px solid #000000;
+    outline: 0;
+    padding: 15px 10px;
+    border-radius: 5px;
+}
+
+::placeholder {
+    font-weight: 300;
+    color: #333;
+
+}
+.logo-box form button{
+    background: #000000;
+    color: white;
+    border: 0;
+    margin-bottom: 15px;
+}
+
+.logo-box p {
+    font-size: 14px;
+    color: #555;
+    margin-right: 40px 0px 50px;
+}
+
+.logo-box p a{
+    text-decoration: none;
+    color: #3e65fe;
+    cursor: pointer;
+   
+}
+/* Responsive Styles */
+
+/* Large Desktops and Monitors */
+@media (min-width: 1200px) {
+    .logo-box {
+        padding: 30px 60px;
+        max-width: 600px;
+    }
+
+    .logo-box h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Desktops and Laptops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .logo-box {
+        padding: 30px 50px;
+        max-width: 550px;
+    }
+
+    .logo-box h2 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .logo-box {
+        padding: 25px 40px;
+        max-width: 500px;
+    }
+
+    .logo-box button {
+        padding: 8px 0;
+    }
+
+    .logo-box input {
+        padding: 12px 8px;
+    }
+}
+
+/* Large Phones */
+@media (min-width: 576px) and (max-width: 767px) {
+    .logo-box {
+        padding: 20px 30px;
+        max-width: 400px;
+    }
+
+    .logo-box h2 {
+        font-size: 1.3rem;
+    }
+
+    .logo-box button {
+        padding: 8px 0;
+        font-size: 0.9rem;
+    }
+
+    .logo-box input {
+        padding: 12px 8px;
+    }
+
+    .logo-box p {
+        font-size: 13px;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 575px) {
+    .logo-box {
+        padding: 20px;
+        width: 95%;
+        max-width: none;
+    }
+
+    .twitterlogo {
+        width: 25px;
+    }
+
+    .logo-box h2 {
+        font-size: 1.2rem;
+    }
+
+    .logo-box button img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .logo-box button {
+        font-size: 0.8rem;
+        padding: 6px 0;
+    }
+
+    .logo-box input {
+        padding: 10px 5px;
+    }
+
+    .logo-box p {
+        font-size: 12px;
+    }
+}
